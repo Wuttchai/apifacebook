@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('product');
 });
 
 Route::post('login', 'FacebookUser@store');
 
 
 Route::get('/Product', function () {
-    return view('product');
+    return view('welcome');
 });
