@@ -1,16 +1,30 @@
 @extends('page.master')
 @section('content')
-            <div class="content">
-                          
+<div class="row">
+  <div class="col-md-12">
+
+  </div>
+  <div class="col-md-12">
+
+  </div>
+</div>
+<div class="row">
+
+    <div class="col-md-12">
+            <div class="content text-center">
+
                           <div class="links">
                             <button onclick="tt()" type="button" class="btn btn-primary btn-lg">
             <span> Login with Facebook</span>
           </button>
 
                           </div>
-                      </div>
-                  </div>
+                     </div>
 
+
+@endsection
+
+@section('js')
           <script language="JavaScript" type="text/javascript">
           window.fbAsyncInit = function() {
               FB.init({
@@ -67,4 +81,5 @@
 
 
                   </script>
+
 @endsection
