@@ -1,5 +1,4 @@
-@extends('page.master')
-@section('content')
+
 <div class="row">
   <div class="col-md-12">
 
@@ -22,9 +21,7 @@
                      </div>
 
 
-@endsection
 
-@section('js')
           <script language="JavaScript" type="text/javascript">
           window.fbAsyncInit = function() {
               FB.init({
@@ -81,5 +78,3 @@
 
 
                   </script>
-
-@endsection
