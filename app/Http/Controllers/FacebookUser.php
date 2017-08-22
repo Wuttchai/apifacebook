@@ -9,7 +9,7 @@ class FacebookUser extends Controller
 {
   public function store(Facebook $fb) //method injection
   {
-      // retrieve form input parameters
+      dd("fff");
       $uid = Request::input('uid');
       $access_token = Request::input('access_token');
       $permissions = Request::input('permissions');
