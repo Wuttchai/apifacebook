@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 use App\User; // you need to define the model appropriately
-
+use Facebook\Facebook;
 use Request;
 
 class FacebookUser extends Controller
 {
   public function store(Facebook $fb) //method injection
   {
-      dd("fff");
+      // retrieve form input parameters
       $uid = Request::input('uid');
       $access_token = Request::input('access_token');
       $permissions = Request::input('permissions');
