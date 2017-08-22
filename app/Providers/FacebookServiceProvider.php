@@ -23,7 +23,7 @@ class FacebookServiceProvider extends ServiceProvider
      */
     public function register()
     {
-      dd("ddd");
+      
       $this->app->singleton(Facebook::class, function ($app) {
           return new Facebook(config('facebook.config'));
       });
