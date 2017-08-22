@@ -83,7 +83,7 @@
                     <div class="col-md-3 col-sm-2.5">
                         <div class="notification">
                           <?php
-if ( $fb_user['name']) {
+if ( $fb_user['name'] != null) {
 echo  $fb_user['name'] ;
 }
                              ?>
