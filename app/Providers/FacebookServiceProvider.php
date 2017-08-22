@@ -13,7 +13,7 @@ class FacebookServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-         URL::forceScheme('https');
+          URL::forceScheme('https');
     }
 
     /**
@@ -23,7 +23,6 @@ class FacebookServiceProvider extends ServiceProvider
      */
     public function register()
     {
-      
       $this->app->singleton(Facebook::class, function ($app) {
           return new Facebook(config('facebook.config'));
       });
