@@ -80,15 +80,7 @@
              </div>
            </div>
 
-                    <div class="col-md-3 col-sm-2.5">
-                        <div class="notification">
-                          <?php
-if ( $fb_user != null) {
-echo  $fb_user ;
-}
-                             ?>
-                          <li><a href="contact.html" class="fa fa-facebook">  Login</a></li>
-                        </div>
+                    
                     </div> <!-- /.col-md-6 -->
                 </div>
                         <script src= "{{ asset('js/jquery-1.10.1.min.js') }}"></script>
