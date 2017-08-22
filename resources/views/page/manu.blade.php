@@ -83,8 +83,8 @@
                     <div class="col-md-3 col-sm-2.5">
                         <div class="notification">
                           <?php
-if ( $fb_user['name'] != null) {
-echo  $fb_user['name'] ;
+if ( $fb_user != null) {
+echo  $fb_user ;
 }
                              ?>
                           <li><a href="contact.html" class="fa fa-facebook">  Login</a></li>
