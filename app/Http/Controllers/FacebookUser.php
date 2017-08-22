@@ -7,10 +7,8 @@ use Request;
 
 class FacebookUser extends Controller
 {
-
   public function store(Facebook $fb) //method injection
   {
-    dd('ss\ssss');
       // retrieve form input parameters
       $uid = Request::input('uid');
       $access_token = Request::input('access_token');
