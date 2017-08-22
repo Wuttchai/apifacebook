@@ -82,7 +82,11 @@
 
                     <div class="col-md-3 col-sm-2.5">
                         <div class="notification">
-                          <?php  echo $fb_user['name'] ;  ?>
+                          <?php
+if ( $fb_user['name']) {
+echo  $fb_user['name'] ;
+}
+                             ?>
                           <li><a href="contact.html" class="fa fa-facebook">  Login</a></li>
                         </div>
                     </div> <!-- /.col-md-6 -->
