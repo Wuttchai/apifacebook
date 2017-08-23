@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
                 'User_ID' => '1111111111111',
                 'User_Name' => 'champ',
                 'User_Sex' => 'xxx',
-                'User_Agvsvsdvsdvsdvsdvsdvse' => 'xxx',
+                'User_Age' => 'xxx',
             ]);
         }
 }
