@@ -21,12 +21,12 @@
       <div class="product-content overlay">
           <h5><a href="#">Kooler Shirt</a></h5>
           <span class="tagline">Partner Name</span>
-          <span class="price">$30.00</span>
+
           <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
       </div>
       <div class="product-content">
           <h5><a href="#">name Page you like</a></h5>
-          <span class="price">$40.00</span>
+
       </div> <!-- /.product-content -->
 
 
@@ -45,12 +45,12 @@
                         <div class="product-content overlay">
                             <h5><a href="#">Kooler Shirt</a></h5>
                             <span class="tagline">Partner Name</span>
-                            <span class="price">$30.00</span>
+
                             <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
                         </div>
                         <div class="product-content">
                             <h5><a href="#">name Page you like</a></h5>
-                            <span class="price">$40.00</span>
+                          
                         </div> <!-- /.product-content -->
 
 

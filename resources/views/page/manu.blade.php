@@ -79,14 +79,17 @@
              </div>
              </div>
            </div>
-           <div class="col-md-6 col-sm-7">
-           <?php
-           echo Session::get('User_Name');
-            ?>
-          </div>
                     </div> <!-- /.col-md-6 -->
+
+                    <div class="col-md-3 col-sm-2.5">
+                    <div class="notification">
+                      <li><a href="contact.html" class="fa fa-facebook"> <?php echo Session::get('User_Name');   ?>  </a></li>
+                    </div>
+                </div> <!-- /.col-md-6 -->
                 </div>
-                        <script src= "{{ asset('js/jquery-1.10.1.min.js') }}"></script>
+
+
+                          <script src= "{{ asset('js/jquery-1.10.1.min.js') }}"></script>
                         <script src="{{ asset('js/jquery.easing-1.3.js') }} "></script>
                         <script src="{{ asset('js/bootstrap.js') }}"></script>
                         <script src="{{ asset('js/manuplugin.js') }}"></script>
