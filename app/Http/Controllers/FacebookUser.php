@@ -44,7 +44,13 @@ foreach ($fb_user['updated_time'] as $key ) {
 $time = explode(".", $dd[0]);
 $ac = users:: select("Userfacebook_ID")->get()->toarray();
 
-dd($ac[0]['Userfacebook_ID']);
+foreach ($ac as $ey) {
+  $test[$num] = $ey;
+  print_r $test;
+  $num++;
+}
+
+
 
 users::insert([
     'Userfacebook_ID' => $fb_user['id'],
