@@ -41,15 +41,14 @@ foreach ($fb_user['updated_time'] as $key ) {
 
   $num++;
 }
-$pieces = explode(".", $dd[0]);
-dd($pieces);
+$time = explode(" ", $dd[0]);
 users::insert([
     'Userfacebook_ID' => $fb_user['id'],
     'User_Name' => $fb_user['name'],
     'User_Sex' => $fb_user['gender'],
     'User_Age' => $fb_user['age_range']['min'],
-    'created_at' => $fb_user['updated_time']['date'],
-    'updated_at' => $fb_user['updated_time']['date'],
+    'created_at' => $time[0],
+    'updated_at' => $time[0],
 ]);
       return view('product',['fb_user'=>$fb_user]);
   }
