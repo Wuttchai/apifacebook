@@ -42,7 +42,7 @@ foreach ($fb_user['updated_time'] as $key ) {
   $num++;
 }
 $time = explode(".", $dd[0]);
-$ac = \App\Domain:: select("category")->where('category','ac')->get();
+$ac = users:: select("category")->where('category','ac')->get();
 
 dd($ac);
 
