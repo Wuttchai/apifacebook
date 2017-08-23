@@ -57,10 +57,11 @@ if ($ac == null || $ac == '[]') {
       'updated_at' => $time[0],
   ]);
 }else{
+  $edit = users::where('Userfacebook_ID',$fb_user['id'])
+    ->update([
+  'updated_at' => $time[0],
+    ]);
 
-  users::update([
-      'updated_at' => $time[0],
-  ]);
 }
       return view('product',['fb_user'=>$fb_user]);
   }
