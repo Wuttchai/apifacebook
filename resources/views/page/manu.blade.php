@@ -1,6 +1,6 @@
 
 <?php
-echo "sasasasasasaa".Session::get('category1');
+echo "sasasasasasaa".Session::get('User_Name');
  ?>
       <!-- /.top-header -->
         <div class="main-header">
