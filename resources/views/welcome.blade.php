@@ -14,7 +14,7 @@
             <div class="content text-center">
 
                           <div class="links">
-                            <button onclick="tt()" type="button" class="btn btn-primary btn-lg">
+                            <button onclick="tt()" type="button" class="btn btn-primary">
             <span> Login with Facebook</span>
           </button>
 

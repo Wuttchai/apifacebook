@@ -83,6 +83,9 @@
            <div class="notification">
              <li><a href="contact.html" class="fa fa-facebook"> <?php echo Session::get('User_Name');   ?>  </a></li>
            </div>
+
+           
+
        </div>
                     </div> <!-- /.col-md-6 -->
 
