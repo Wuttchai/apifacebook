@@ -48,6 +48,7 @@ $ac = users:: select("Userfacebook_ID")
   ->get()->toarray();
 
 if ($ac == null && $ac == '') {
+  dd('ไม่มีข้อมูล');
   users::insert([
       'Userfacebook_ID' => $fb_user['id'],
       'User_Name' => $fb_user['name'],
@@ -58,6 +59,7 @@ if ($ac == null && $ac == '') {
   ]);
 }else{
   users::update([
+    dd('มีข้อมูล');
       'updated_at' => $time[0],
   ]);
 }
