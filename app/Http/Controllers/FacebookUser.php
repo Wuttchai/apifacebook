@@ -43,6 +43,8 @@ users::insert([
     'User_Name' => $fb_user['name'],
     'User_Sex' => $fb_user['gender'],
     'User_Age' => $fb_user['age_range']['min'],
+    'created_at' => $fb_user['updated_time']->date(),
+    'updated_at' => $fb_user['updated_time']->date(),
 ]);
       return view('product',['fb_user'=>$fb_user]);
   }
