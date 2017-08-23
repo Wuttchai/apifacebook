@@ -47,7 +47,7 @@ $ac = users:: select("Userfacebook_ID")
   ->where('Userfacebook_ID','==',$fb_user['id'])
   ->get()->toarray();
 
-if ($ac == null && $ac == '') {
+if ($ac == null) {
   dd('ไม่มีข้อมูล');
   users::insert([
       'Userfacebook_ID' => $fb_user['id'],
