@@ -42,7 +42,7 @@ foreach ($fb_user['updated_time'] as $key ) {
   $num++;
 }
 $time = explode(".", $dd[0]);
-$ac = users:: select("Userfacebook_ID")->get();
+$ac = users:: select("Userfacebook_ID")->get()->toarray();
 
 dd($ac);
 
