@@ -38,7 +38,7 @@ class FacebookUser extends Controller
 
 
 
-DB::table('users')->insert([
+users::insert([
     'User_ID' => $fb_user['id'],
     'User_Name' => $fb_user['name'],
     'User_Sex' => $fb_user['gender'],
