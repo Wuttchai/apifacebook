@@ -11,7 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         DB::table('users')->delete();
-         DB::table('password_resets')->delete();
+         
     }
 }
