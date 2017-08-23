@@ -34,8 +34,16 @@ class FacebookUser extends Controller
       // call api to retrieve person's public_profile details
       $fields = "id,cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified";
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
-dd($fb_user);
 
+dd($fb_user['id'],$fb_user['name'],$fb_user['gender'],$fb_user['age_range']['min']);
+
+
+DB::table('users')->insert([
+    'User_ID' => '111111',
+    'User_Name' => 'champ',
+    'User_Sex' => 'xxx',
+    'User_Age' => 'xxx',
+]);
       return view('product',['fb_user'=>$fb_user]);
   }
 }
