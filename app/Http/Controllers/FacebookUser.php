@@ -58,8 +58,9 @@ if ($ac == null && $ac == '') {
       'updated_at' => $time[0],
   ]);
 }else{
+  dd('มีข้อมูล');
+
   users::update([
-    dd('มีข้อมูล');
       'updated_at' => $time[0],
   ]);
 }
