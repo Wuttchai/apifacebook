@@ -16,20 +16,20 @@ class FacebookUser extends Controller
 
       // assuming we have a User model already set up for our database
       // and assuming facebook_id field to exist in users table in database
-    
-      $user = users::firstOrCreate(['User_ID' => $uid]);
 
+      $user = users::firstOrCreate(['User_ID' => $uid]);
+dd($user);
       // get long term access token for future use
       $oAuth2Client = $fb->getOAuth2Client();
 
       // assuming access_token field to exist in users table in database
     $user->access_token = $oAuth2Client->getLongLivedAccessToken($token)->getValue();
 
-    dd($user);
+
     $user->save();
 
       // set default access token for all future requests to Facebook API
-      $fb->setDefaultAccessToken($access_token);
+      $fb->setDefaultAccessToken($user->$access_token);
 
       // call api to retrieve person's public_profile details
       $fields = "id,cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified";
