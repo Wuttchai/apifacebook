@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
           $table->increments('id');
           $table->string('Userfacebook_ID');
           $table->string('User_Name');
-          $table->string('User_Sex')->unique();
+          $table->string('User_Sex');
           $table->string('User_Age');
           $table->timestamps();
         });
