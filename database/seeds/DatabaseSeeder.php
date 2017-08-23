@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
       DB::table('users')->insert([
 'User_ID' => '1111111111111',
 'User_Name' => 'champ',
-'User_Sex' => 'man'
+'User_Sex' => 'man',
 'User_Age' => '15'
 
 ]);
