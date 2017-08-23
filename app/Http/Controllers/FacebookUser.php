@@ -44,7 +44,7 @@ foreach ($fb_user['updated_time'] as $key ) {
 $time = explode(".", $dd[0]);
 
 $ac = users:: where('Userfacebook_ID','=',$fb_user['id'])
-  ->get()->toarray();
+  ->get();
 dd($ac);
 if ($ac == null || $ac == '[]') {
 
