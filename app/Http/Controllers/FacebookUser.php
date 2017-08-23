@@ -32,7 +32,7 @@ class FacebookUser extends Controller
       $fb->setDefaultAccessToken($access_token);
 
       // call api to retrieve person's public_profile details
-      $fields = "id,cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified";
+      $fields = "id,name,age_range,gender,timezone,updated_time";
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
 
 $num =0;
@@ -45,8 +45,8 @@ $time = explode(".", $dd[0]);
 
 $ac = users:: select("Userfacebook_ID")
   ->where('Userfacebook_ID','==',$fb_user['id'])
-  ->get()->toarray();
-
+  ->get();
+dd($ac);
 if ($ac == null) {
 
   users::insert([
@@ -63,10 +63,6 @@ if ($ac == null) {
       'updated_at' => $time[0],
   ]);
 }
-
-
-
-
       return view('product',['fb_user'=>$fb_user]);
   }
 }
