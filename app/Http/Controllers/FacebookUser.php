@@ -35,9 +35,13 @@ class FacebookUser extends Controller
       $fields = "id,cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified";
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
 
-dd($fb_user['updated_time']);
+$num =0;
+foreach ($fb_user['updated_time'] as $key ) {
+  $dd[$num] = $key;
 
-
+  $num++;
+}
+dd($dd);
 users::insert([
     'Userfacebook_ID' => $fb_user['id'],
     'User_Name' => $fb_user['name'],
