@@ -1,6 +1,6 @@
 
 <?php
-Session::get('category1');
+echo Session::get('category1');
  ?>
       <!-- /.top-header -->
         <div class="main-header">
