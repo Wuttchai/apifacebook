@@ -12,10 +12,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       DB::table('users')->insert([
-'User_ID' => '1111111111111',
-'User_Name' => 'champ',
-'User_Sex' => 'man',
-'User_Age' => '15'
+        'User_ID' => '1111111111111',
+        'User_Name' => 'champ',
+        'User_Sex' => 'man',
+        'User_Age' => '15'
 
 ]);
     }
