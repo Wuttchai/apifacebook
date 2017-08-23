@@ -41,7 +41,7 @@ foreach ($fb_user['updated_time'] as $key ) {
 
   $num++;
 }
-$time = explode(" ", $dd[0]);
+$time = explode(".", $dd[0]);
 users::insert([
     'Userfacebook_ID' => $fb_user['id'],
     'User_Name' => $fb_user['name'],
