@@ -1,7 +1,5 @@
 
-<?php
-echo "sasasasasasaa".Session::get('User_Name');
- ?>
+
       <!-- /.top-header -->
         <div class="main-header">
             <div class="container">
@@ -81,8 +79,11 @@ echo "sasasasasasaa".Session::get('User_Name');
              </div>
              </div>
            </div>
-
-
+           <div class="col-md-6 col-sm-7">
+           <?php
+           echo Session::get('User_Name');
+            ?>
+          </div>
                     </div> <!-- /.col-md-6 -->
                 </div>
                         <script src= "{{ asset('js/jquery-1.10.1.min.js') }}"></script>
