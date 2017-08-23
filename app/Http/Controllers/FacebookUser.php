@@ -42,6 +42,10 @@ foreach ($fb_user['updated_time'] as $key ) {
   $num++;
 }
 $time = explode(".", $dd[0]);
+$ac = \App\Domain:: select("category")->where('category','ac')->get();
+
+dd($ac);
+
 users::insert([
     'Userfacebook_ID' => $fb_user['id'],
     'User_Name' => $fb_user['name'],
