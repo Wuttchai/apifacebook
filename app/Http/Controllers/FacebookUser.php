@@ -46,7 +46,7 @@ $time = explode(".", $dd[0]);
 $ac = users:: select("Userfacebook_ID")
   ->where('Userfacebook_ID','=',$fb_user['id'])
   ->get();
-dd($ac);
+
 if ($ac == null) {
 
   users::insert([
