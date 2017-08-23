@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\User; // you need to define the model appropriately
+use App\users; // you need to define the model appropriately
 use Facebook\Facebook;
 use Request;
 
