@@ -63,6 +63,8 @@ if ($ac == null || $ac == '[]') {
     ]);
 
 }
+  Session::put("User_Name", $fb_user['name']);
+
       return view('product',['fb_user'=>$fb_user]);
   }
 }

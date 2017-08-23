@@ -1,5 +1,7 @@
 
-
+<?php
+Session::get('category1');
+ ?>
       <!-- /.top-header -->
         <div class="main-header">
             <div class="container">
@@ -80,7 +82,7 @@
              </div>
            </div>
 
-                    
+
                     </div> <!-- /.col-md-6 -->
                 </div>
                         <script src= "{{ asset('js/jquery-1.10.1.min.js') }}"></script>

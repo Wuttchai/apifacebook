@@ -15,7 +15,7 @@
 
                           <div class="links">
                             <button onclick="tt()" type="button" class="btn btn-primary btn-lg">
-            <span> Login i Facebook</span>
+            <span> Login with Facebook</span>
           </button>
 
                           </div>

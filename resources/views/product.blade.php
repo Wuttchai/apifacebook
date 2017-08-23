@@ -25,7 +25,7 @@
           <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
       </div>
       <div class="product-content">
-          <h5><a href="#">Name of Shirt</a></h5>
+          <h5><a href="#">name Page you like</a></h5>
           <span class="price">$40.00</span>
       </div> <!-- /.product-content -->
 
@@ -49,7 +49,7 @@
                             <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
                         </div>
                         <div class="product-content">
-                            <h5><a href="#">Name of Shirt</a></h5>
+                            <h5><a href="#">name Page you like</a></h5>
                             <span class="price">$40.00</span>
                         </div> <!-- /.product-content -->
 
@@ -57,7 +57,7 @@
                     </div> <!-- /.product-item -->
                     <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-                                    <span>4<i class="fa fa-heart"></i></span>
+                                    <span>578<i class="fa fa-heart"></i></span>
                                 </div>
                 </div> <!-- /.col-md-3 -->
                 <div class="col-md-3 col-sm-6">
@@ -69,19 +69,19 @@
                                         <div class="product-content overlay">
                                             <h5><a href="#">Kooler Shirt</a></h5>
                                             <span class="tagline">Partner Name</span>
-                                            <span class="price">$30.00</span>
+
                                             <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
                                         </div>
                                         <div class="product-content">
-                                            <h5><a href="#">Name of Shirt</a></h5>
-                                            <span class="price">$40.00</span>
+                                            <h5><a href="#">name Page you like</a></h5>
+
                                         </div> <!-- /.product-content -->
 
 
                                     </div> <!-- /.product-item -->
                                     <div class="progress">
                                                     <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-                                                    <span>4<i class="fa fa-heart"></i></span>
+                                                    <span>1000<i class="fa fa-heart"></i></span>
                                                 </div>
                                 </div> <!-- /.col-md-3 -->
 
@@ -94,19 +94,19 @@
                                                         <div class="product-content overlay">
                                                             <h5><a href="#">Kooler Shirt</a></h5>
                                                             <span class="tagline">Partner Name</span>
-                                                            <span class="price">$30.00</span>
+
                                                             <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt tenetur deleniti labore!</p>
                                                         </div>
                                                         <div class="product-content">
-                                                            <h5><a href="#">Name of Shirt</a></h5>
-                                                            <span class="price">$40.00</span>
+                                                            <h5><a href="#">name Page you like</a></h5>
+
                                                         </div> <!-- /.product-content -->
 
 
                                                     </div> <!-- /.product-item -->
                                                     <div class="progress">
                                                                     <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-                                                                    <span>4<i class="fa fa-heart"></i></span>
+                                                                    <span>100<i class="fa fa-heart"></i></span>
                                                                 </div>
                                                 </div> <!-- /.col-md-3 -->
 </div>
