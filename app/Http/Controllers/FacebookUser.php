@@ -35,14 +35,14 @@ class FacebookUser extends Controller
       $fields = "id,cover,name,first_name,last_name,age_range,link,gender,locale,picture,timezone,updated_time,verified";
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
 
-dd($fb_user['id'],$fb_user['name'],$fb_user['gender'],$fb_user['age_range']['min']);
+
 
 
 DB::table('users')->insert([
-    'User_ID' => '111111',
-    'User_Name' => 'champ',
-    'User_Sex' => 'xxx',
-    'User_Age' => 'xxx',
+    'User_ID' => $fb_user['id'],
+    'User_Name' => $fb_user['name'],
+    'User_Sex' => $fb_user['gender'],
+    'User_Age' => $fb_user['age_range']['min'],
 ]);
       return view('product',['fb_user'=>$fb_user]);
   }
