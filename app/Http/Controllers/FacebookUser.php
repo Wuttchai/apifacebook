@@ -16,8 +16,8 @@ class FacebookUser extends Controller
 
       // assuming we have a User model already set up for our database
       // and assuming facebook_id field to exist in users table in database
-dd(users::firstOrCreate(['User_ID' => $uid]),$uid);
-      $user = users::firstOrCreate(['User_ID' => $uid]);
+dd(users::firstOrCreate(['Userfacebook_ID' => $uid]),$uid);
+      $user = users::firstOrCreate(['Userfacebook_ID' => $uid]);
 
       // get long term access token for future use
       $oAuth2Client = $fb->getOAuth2Client();
