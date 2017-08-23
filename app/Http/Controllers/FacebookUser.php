@@ -43,11 +43,10 @@ foreach ($fb_user['updated_time'] as $key ) {
 }
 $time = explode(".", $dd[0]);
 
-$ac = users:: select("Userfacebook_ID")
-  ->where('Userfacebook_ID','=',$fb_user['id'])
+$ac = users:: where('Userfacebook_ID','=',$fb_user['id'])
   ->get()->toarray();
 dd($ac);
-if ($ac == null) {
+if ($ac == null || $ac == '[]') {
 
   users::insert([
       'Userfacebook_ID' => $fb_user['id'],
