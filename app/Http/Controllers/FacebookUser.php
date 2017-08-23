@@ -42,24 +42,29 @@ foreach ($fb_user['updated_time'] as $key ) {
   $num++;
 }
 $time = explode(".", $dd[0]);
-$ac = users:: select("Userfacebook_ID")->get()->toarray();
 
-foreach ($ac as $ey) {
-  $test[$num] = $ey;
-  print_r $test;
-  $num++;
+$ac = users:: select("Userfacebook_ID")
+  ->where('Userfacebook_ID','==',$fb_user['id'])
+  ->get()->toarray();
+
+if ($ac == null && $ac == '') {
+  users::insert([
+      'Userfacebook_ID' => $fb_user['id'],
+      'User_Name' => $fb_user['name'],
+      'User_Sex' => $fb_user['gender'],
+      'User_Age' => $fb_user['age_range']['min'],
+      'created_at' => $time[0],
+      'updated_at' => $time[0],
+  ]);
+}else{
+  users::update([
+      'updated_at' => $time[0],
+  ]);
 }
 
 
 
-users::insert([
-    'Userfacebook_ID' => $fb_user['id'],
-    'User_Name' => $fb_user['name'],
-    'User_Sex' => $fb_user['gender'],
-    'User_Age' => $fb_user['age_range']['min'],
-    'created_at' => $time[0],
-    'updated_at' => $time[0],
-]);
+
       return view('product',['fb_user'=>$fb_user]);
   }
 }
