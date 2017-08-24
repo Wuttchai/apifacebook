@@ -80,9 +80,14 @@
              </div>
            </div>
            <div class="col-md-3 col-sm-2.5">
-        
+
            <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <?php echo Session::get('User_Name');   ?>
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <?php if (Session::get('User_Name') == '') {
+    echo "Login";
+  }else {
+  echo Session::get('User_Name');
+  }
+  ?>
     <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">HTML</a></li>
