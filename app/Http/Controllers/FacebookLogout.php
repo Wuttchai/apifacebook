@@ -5,7 +5,7 @@ use Facebook\Facebook;
 use Session;
 
 
-class FacebookUser extends Controller
+class FacebookLogout extends Controller
 {
   public function logout()
   {

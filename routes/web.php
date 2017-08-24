@@ -23,4 +23,4 @@ Route::get('/Product', function () {
     return view('product');
 });
 
-Route::get('/logout', 'FacebookLogout@logout');
+Route::get('logout', 'FacebookLogout@logout');
