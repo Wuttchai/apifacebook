@@ -80,11 +80,16 @@
              </div>
            </div>
            <div class="col-md-3 col-sm-2.5">
-           <div class="notification">
-             <li><a href="contact.html" class="fa fa-facebook"> <?php echo Session::get('User_Name');   ?>  </a></li>
-           </div>
-
-           
+        
+           <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <?php echo Session::get('User_Name');   ?>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
 
        </div>
                     </div> <!-- /.col-md-6 -->
