@@ -7,7 +7,7 @@ use Session;
 
 class FacebookUser extends Controller
 {
-  public function logout() //method injection
+  public function logout()
   {
 Session::forget("User_Name");
 
