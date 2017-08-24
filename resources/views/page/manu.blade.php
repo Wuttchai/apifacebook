@@ -90,9 +90,8 @@
     ?>
       <span class="caret"></span></button>
       <ul class="dropdown-menu">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">JavaScript</a></li>
+        <li><a href="logout">Logout</a></li>
+
       </ul>
     </div>
            </div>

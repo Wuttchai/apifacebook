@@ -22,3 +22,5 @@ Route::post('login', 'FacebookUser@store');
 Route::get('/Product', function () {
     return view('product');
 });
+
+Route::get('/logout', 'Facebooklogout@logout');
