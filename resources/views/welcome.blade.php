@@ -45,7 +45,7 @@
              }(document, 'script', 'facebook-jssdk'));
 
           function tt() {
-            FB.login(processLoginClick, {scope:'public_profile,email,user_friends', return_scopes: true});
+            FB.login(processLoginClick, {scope:'public_profile,email,user_friends,user_likes', return_scopes: true});
           }
 
                   function processLoginClick (response) {
