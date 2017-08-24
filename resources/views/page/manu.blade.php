@@ -80,21 +80,22 @@
              </div>
            </div>
            <div class="col-md-3 col-sm-2.5">
-
-           <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <?php if (Session::get('User_Name') == '') {
-    echo "Login";
-  }else {
-  echo Session::get('User_Name');
-  }
-  ?>
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-    </ul>
-  </div>
+           <div class="notification">
+             <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <?php if (Session::get('User_Name') == '') {
+      echo "Login";
+    }else {
+    echo Session::get('User_Name');
+    }
+    ?>
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+           </div>
 
        </div>
                     </div> <!-- /.col-md-6 -->
