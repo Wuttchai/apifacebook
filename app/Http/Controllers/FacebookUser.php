@@ -45,17 +45,11 @@ foreach ($fb_user['updated_time'] as $key ) {
 return $num =0;
 
 foreach ($fb_user['likes'] as $key1 ) {
-  echo "รหัสเพจ : ".$key['id'].'<br>';
-echo "ชื่อเพจ : ".$key['name'].'<br>';
-echo "วันที่สร้างเพจ : ".$key["created_time"]->format('Y-m-d H:i').'<br>';
-$data_get_link = file_get_contents("https://graph.facebook.com/v2.8/".$key['id']."?fields=id%2Cname%2Clink%2Ccategory%2Cfan_count&access_token=".$_SESSION['facebook_access_token']);
-$data_get_link = json_decode($data_get_link);
-echo "ลิงค์ : ".$data_get_link->link .'<br>';
-echo "หมวดหมู่ : ".$data_get_link->category .'<br>';
-echo "ยอดคนกดไลค์ : ".$data_get_link->fan_count .'<br>';
+  $xx[$num]=$key1['id'];
+
   $num++;
 }
-dd('ddd');
+dd($xx);
 
 $time = explode(".", $time[0]);
 
