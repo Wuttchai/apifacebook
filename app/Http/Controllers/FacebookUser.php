@@ -35,14 +35,21 @@ class FacebookUser extends Controller
       // call api to retrieve person's public_profile details
       $fields = "id,name,age_range,gender,timezone,updated_time,likes.limit(10){id,name,created_time}";
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
-dd($fb_user);
+
 $num =0;
 foreach ($fb_user['updated_time'] as $key ) {
-  $dd[$num] = $key;
+  $time[$num] = $key;
 
   $num++;
 }
-$time = explode(".", $dd[0]);
+foreach ($fb_user['likes'] as $key1 ) {
+  $likes[$num] = $key1;
+
+  $num++;
+}
+dd($likes);
+
+$time = explode(".", $time[0]);
 
 $ac = users:: where('Userfacebook_ID','=',$fb_user['id'])
   ->get()->toarray();
