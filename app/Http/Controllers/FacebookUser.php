@@ -42,8 +42,13 @@ foreach ($fb_user['updated_time'] as $key ) {
 
   $num++;
 }
+return $num =0;
 
-dd($fb_user['likes']['id']);
+foreach ($fb_user['likes'] as $key1 ) {
+  dd($key['id']);
+  $num++;
+}
+
 
 $time = explode(".", $time[0]);
 
