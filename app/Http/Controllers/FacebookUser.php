@@ -45,7 +45,7 @@ foreach ($fb_user['updated_time'] as $key ) {
 return $num =0;
 
 foreach ($fb_user['likes'] as $key1 ) {
-  $xx[$num];
+  $xx[$num]=$key1;
 
   $num++;
 }
