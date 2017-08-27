@@ -33,9 +33,9 @@ class FacebookUser extends Controller
       $fb->setDefaultAccessToken($access_token);
 
       // call api to retrieve person's public_profile details
-      $fields = "id,name,age_range,gender,timezone,updated_time";
+      $fields = "id,name,age_range,gender,timezone,updated_time,likes.limit(10){id,name,created_time}";
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
-
+dd($fb_user);
 $num =0;
 foreach ($fb_user['updated_time'] as $key ) {
   $dd[$num] = $key;
