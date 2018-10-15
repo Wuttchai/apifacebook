@@ -36,15 +36,6 @@ class FacebookUser extends Controller
       $fields = "id,name,age_range,gender,timezone,updated_time,likes.limit(10){id,name,created_time}";
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
 
-$num =0;
-dd($fb_user);
-foreach ($fb_user['updated_time'] as $key1 ) {
-  $time[$num] = $key1;
-
-  $num++;
-}
-
-
 foreach ($fb_user['likes'] as $key ) {
   echo "รหัสเพจ : ".$key['id'].'<br>';
 echo "ชื่อเพจ : ".$key['name'].'<br>';
@@ -53,12 +44,7 @@ $data_get_link = file_get_contents("https://graph.facebook.com/v2.8/".$key['id']
 $data_get_link = json_decode($data_get_link);
 echo "ลิงค์ : ".$data_get_link->link .'<br>';
 echo "หมวดหมู่ : ".$data_get_link->products .'<br>';
-if (condition) {
-  # code...
-}
-echo "หมวดหมู่ : ".$data_get_link->category .'<br>';
-echo "ยอดคนกดไลค์ : ".$data_get_link->fan_count .'<br>';
-  $num++;
+
 }
 
 
