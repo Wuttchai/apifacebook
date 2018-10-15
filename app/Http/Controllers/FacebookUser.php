@@ -48,10 +48,8 @@ foreach ($fb_user['likes'] as $key ) {
   echo "รหัสเพจ : ".$key['id'].'<br>';
 echo "ชื่อเพจ : ".$key['name'].'<br>';
 echo "วันที่สร้างเพจ : ".$key["created_time"]->format('Y-m-d H:i').'<br>';
-///$data_get_link = file_get_contents("https://graph.facebook.com/v2.8/".$key['id']."?fields=id%2Cname%2Clink%2Ccategory%2products%2Cfan_count&access_token=".$access_token);
-$data_get_link = file_get_contents("https://graph.facebook.com/ ".$key['id']."?access_token=".$access_token."&fields=name,likes");
-$data_get_link = preg_replace("/ /", "%20", $data_get_link);
-//https://graph.facebook.com/FANPAGE_ID?access_token=ACCESS_TOKEN&fields=name,likes
+$data_get_link = file_get_contents("https://graph.facebook.com/820882001277849
+    ?fields=about,fan_count,website");
 $data_get_link = json_decode($data_get_link);
 echo "ลิงค์ : ".$data_get_link->link .'<br>';
 echo "หมวดหมู่ : ".$data_get_link->products .'<br>';
