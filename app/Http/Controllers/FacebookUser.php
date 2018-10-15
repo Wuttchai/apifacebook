@@ -37,6 +37,7 @@ class FacebookUser extends Controller
       $fb_user = $fb->get('/me?fields='.$fields)->getGraphUser();
 
 $num =0;
+dd($fb_user);
 foreach ($fb_user['updated_time'] as $key1 ) {
   $time[$num] = $key1;
 
@@ -59,7 +60,7 @@ echo "หมวดหมู่ : ".$data_get_link->category .'<br>';
 echo "ยอดคนกดไลค์ : ".$data_get_link->fan_count .'<br>';
   $num++;
 }
-dd('ddd');
+
 
 $time = explode(".", $time[0]);
 
